@@ -1,0 +1,33 @@
+environ:
+  seed: 5
+  deterministic: False
+model:
+  name: "model_name"
+  pretrained_model: "pretrained model path"
+  params:
+    param1: "..."
+data:
+  name: "SceneFlow"
+  tr_list: "training data list"
+  te_list: "testing data list"
+  path: 'data path'
+solver:
+  epochs: 16
+  batch_size: 12
+  step_decay: 1
+  optimizer:
+    name: 'Adam'
+    params:
+      lr: 0.001
+  lr_policy:
+    name: 'multi_step'
+    params:
+      milestones: [10, 12, 14]
+      gamma: 0.1
+apex:
+  amp_used: False
+  opt_level: "O1"
+  keep_batchnorm_fp32:
+  loss_scale:
+
+
