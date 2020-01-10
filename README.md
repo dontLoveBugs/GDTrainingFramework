@@ -1,4 +1,4 @@
-# GDTrainingFramework
+# General Distributed Training Framework
 This is a general distributed deeplearning training framework based on Pytorch 1.0. You only need to add your model and loss function for a specific task.
 
 # Highlights
